@@ -1,23 +1,63 @@
 aid: aptabiotherapeutics
+
 name: Aptabiotherapeutics
-description: 'Aptabiotherapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://aptatherapeutics.com/wp-content/uploads/2025/09/Beitragsbild-1.jpg
+
+description: 'Aptabi therapeutics is a biotechnology company focused on developing innovative antibody‑based therapeutics. The firm aims to address unmet medical needs by leveraging advanced protein engineering and platform technologies to create novel treatments for serious diseases. While detailed product pipelines are not publicly disclosed, the company positions itself within the emerging bio‑pharma sector, seeking collaborations and investment to advance its research programs.'
+
 url: https://raw.githubusercontent.com/api-evangelist/aptabiotherapeutics/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
-- Company
-apis: []
+- Autoimmune Diseases
+- Heart Failure
+- GPCR
+- Clinical Development
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/aptabiotherapeutics-hosts.yml
+- type: TermsOfService
+  url: https://aptatherapeutics.com/de/terms-and-conditions-2/
+- type: PrivacyPolicy
+  url: https://aptatherapeutics.com/privacy-policy/
+- type: DomainSecurity
+  url: security/aptabiotherapeutics-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/aptabiotherapeutics
+  url: https://aptatherapeutics.com
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No public developer documentation or API specifications were found for Aptabiotherapeutics.
+  evidence:
+    - url: https://aptatherapeutics.com
+      status: 200
+  checked: 2026-09-25
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
