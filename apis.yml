@@ -19,7 +19,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-25'
 
-modified: '2026-09-25'
+modified: '2026-10-06'
 
 tags:
 - Autoimmune Diseases
@@ -34,6 +34,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://aptatherapeutics.com/feed/
+  type: BlogRSS
 - type: Hosts
   url: hosts/aptabiotherapeutics-hosts.yml
 - type: TermsOfService
